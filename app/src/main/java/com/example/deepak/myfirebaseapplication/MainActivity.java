@@ -21,7 +21,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     EditText etxtUser, etxtPass;
-    Button btnlogin,btnRegister;
+    Button btnlogin,btnRegister,btnotp;
     FirebaseAuth Auth;
     User user;
 
@@ -40,6 +40,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 finish();
                 }
         });
+       btnotp=findViewById(R.id.buttonOtpSign);
+       btnotp.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               Intent intent= new Intent(MainActivity.this,OTPActivity.class);
+               startActivity(intent);
+               finish();
+           }
+       });
     }
 
     @Override

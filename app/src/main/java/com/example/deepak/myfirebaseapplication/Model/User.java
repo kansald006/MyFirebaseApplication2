@@ -3,7 +3,7 @@ package com.example.deepak.myfirebaseapplication.Model;
 import java.io.Serializable;
 
 public class User implements Serializable {
-    public int id;
+    public String id;
     public String name;
     public String email;
     public String password;
@@ -13,7 +13,7 @@ public class User implements Serializable {
 
     }
 
-    public User(int id,String name, String email, String password) {
+    public User(String id,String name, String email, String password) {
         this.id= id;
         this.name = name;
         this.email = email;
@@ -23,7 +23,7 @@ public class User implements Serializable {
     @Override
     public String toString() {
         return "User{" +
-                "id=" + id +
+                "id='" + id + '\'' +
                 ", name='" + name + '\'' +
                 ", email='" + email + '\'' +
                 ", password='" + password + '\'' +

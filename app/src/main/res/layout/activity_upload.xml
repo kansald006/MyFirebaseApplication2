@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:scrollbars="vertical"
+
+
+    tools:context=".ui.UploadActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        android:fillViewport="true"
+
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/layoutSignin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/statusSignIn"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/sign_in_prompt" />
+
+            <Button
+                android:id="@+id/buttonSignIn"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SignIn" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/layoutStorage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+            <TextView
+                android:id="@+id/camera"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="@string/take_photo_prompt" />
+
+            <Button
+                android:id="@+id/buttonCamera"
+                android:layout_width="122dp"
+                android:layout_height="wrap_content"
+                android:text="Camera" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutDownload"
+            android:layout_width="406dp"
+            android:layout_height="256dp"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/labellink"
+
+                android:text="label Link" />
+
+            <TextView
+                android:id="@+id/downloadlink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Download Link" />
+
+            <TextView
+                android:id="@+id/pictureDownloadUri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                tools:text="url" />
+
+            <Button
+                android:id="@+id/buttonDownload"
+                android:layout_width="124dp"
+                android:layout_height="wrap_content"
+                android:text="Download" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
